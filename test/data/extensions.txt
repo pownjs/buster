@@ -1,0 +1,12 @@
+# Sample file
+jsp
+do
+php
+py
+pl
+asp
+aspx
+xml
+csv
+bck
+back

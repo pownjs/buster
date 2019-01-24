@@ -1,0 +1,39 @@
+{
+  "name": "@pown/buster",
+  "version": "2.0.0",
+  "description": "Pownage guaranteed",
+  "main": "lib/index.js",
+  "scripts": {
+    "buster": "POWN_ROOT=. pown-cli buster",
+    "build": "node ./scripts/build-index.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pownjs/pown-buster.git"
+  },
+  "keywords": [
+    "exploit",
+    "framework"
+  ],
+  "author": "pdp <pdp@gnucitizen.org>",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pownjs/pown-buster/issues"
+  },
+  "homepage": "https://github.com/pownjs/pown-buster#readme",
+  "devDependencies": {
+    "@pown/cli": "^2.3.0"
+  },
+  "dependencies": {
+    "@pown/file": "^2.0.0",
+    "@pown/request": "^2.4.0",
+    "async": "^2.6.1"
+  },
+  "pown": {
+    "commands": [
+      "lib/commands/main.js"
+    ]
+  }
+}

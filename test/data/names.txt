@@ -1,0 +1,4 @@
+# Sample file
+admin
+user
+backup
