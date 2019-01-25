@@ -38,12 +38,13 @@ Options:
   --request-method, -m        Request method  [string] [default: "GET"]
   --name-dictionary, -n       Name dictionary file  [string]
   --extension-dictionary, -e  Extension dictionary file  [string]
-  --name-prefix               Name prefix  [string] [default: ""]
+  --name-prefix               Name prefix  [string] [default: "/"]
   --name-suffix               Name suffix  [string] [default: ""]
   --extension-prefix          Extension prefix  [string] [default: "."]
   --extension-suffix          Extension suffix  [string] [default: ""]
   --request-concurrency, -r   The number of request to run concurrently  [string] [default: Infinity]
   --load-concurrency, -l      The number of assync operations to run concurrently  [string] [default: Infinity]
+  --yes, -y                   Answer yes to all questions  [boolean] [default: false]
 ```
 
 ## Wish List
