@@ -32,7 +32,7 @@
   },
   "pown": {
     "commands": [
-      "lib/commands/main.js"
+      "lib/commands/buster.js"
     ]
   }
 }
