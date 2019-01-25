@@ -5,7 +5,6 @@
   "main": "lib/index.js",
   "scripts": {
     "buster": "POWN_ROOT=. pown-cli buster",
-    "build": "node ./scripts/build-index.js",
     "test": "mocha"
   },
   "repository": {
@@ -27,9 +26,9 @@
     "@pown/cli": "^2.3.0"
   },
   "dependencies": {
+    "@pown/async": "^2.0.1",
     "@pown/file": "^2.0.0",
-    "@pown/request": "^2.4.0",
-    "async": "^2.6.1"
+    "@pown/request": "^2.5.0"
   },
   "pown": {
     "commands": [
