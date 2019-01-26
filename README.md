@@ -36,7 +36,7 @@ Options:
   --version                   Show version number  [boolean]
   --debug                     Debug mode  [boolean]
   --help                      Show help  [boolean]
-  --request-method, -m        Request method  [string] [default: "GET"]
+  --request-method, -X        Request method  [string] [default: "GET"]
   --name-dictionary, -n       Name dictionary file  [string]
   --extension-dictionary, -e  Extension dictionary file  [string]
   --name-prefix               Name prefix  [string] [default: "/"]
@@ -45,6 +45,7 @@ Options:
   --extension-suffix          Extension suffix  [string] [default: ""]
   --request-concurrency, -r   The number of request to run concurrently  [string] [default: Infinity]
   --load-concurrency, -l      The number of assync operations to run concurrently  [string] [default: Infinity]
+  --header, -H                Set header  [array] [default: []]
   --timeout, -t               Request timeout in milliseconds  [number] [default: 30000]
   --yes, -y                   Answer yes to all questions  [boolean] [default: false]
 ```
