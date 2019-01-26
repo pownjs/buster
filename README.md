@@ -47,7 +47,12 @@ Options:
   --load-concurrency, -l      The number of assync operations to run concurrently  [string] [default: Infinity]
   --header, -H                Set header  [array] [default: []]
   --timeout, -t               Request timeout in milliseconds  [number] [default: 30000]
+  --all, -y                   Display all results  [boolean] [default: false]
   --yes, -y                   Answer yes to all questions  [boolean] [default: false]
+
+Examples:
+  pown-cli buster -X HEAD -n words.txt http://target                                             Send requests using the HEAD HTTP method
+  pown-cli buster -H 'Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l' -n words.txt http://target  Send basic authentication headers
 ```
 
 ## Todo
