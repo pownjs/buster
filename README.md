@@ -50,8 +50,12 @@ Options:
   --yes, -y                   Answer yes to all questions  [boolean] [default: false]
 ```
 
-## Wish List
+## Todo
 
 The following list of improvements are just around the corner:
 
 * Loading full requests instead of just uris
+* Curses mode - preview in nice curses table
+* Export - ability to serialise request and responses
+* Support for HTTP/2 - should be available soon
+* Support for request pipelining and other paralel options - see @pown/request
