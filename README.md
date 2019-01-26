@@ -61,9 +61,9 @@ Examples:
 
 ## Blessed
 
-Buster comes with an optional text interface which helps when investigating the results in detail. Use either `-b` or `--blessed` options to activate it.
+Pown Buster comes with an optional text interface which comes handy when investigating all results in detail. Use either `-b` or `--blessed` options to activate it. Using this feature will not result in performance degradation.
 
-![](https://media.githubusercontent.com/media/pownjs/pown-buster/master/screenshots/01.png)
+![Screenshot](https://media.githubusercontent.com/media/pownjs/pown-buster/master/screenshots/01.png)
 
 ## Todo
 
@@ -73,4 +73,5 @@ The following list of improvements are just around the corner:
 * Curses mode - preview in nice curses table
 * Export - ability to serialise request and responses
 * Support for HTTP/2 - should be available soon
+* Split the blessed UI in a separate thread
 * Support for request pipelining and other paralel options - see @pown/request
