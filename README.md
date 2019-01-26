@@ -59,6 +59,12 @@ Examples:
   pown buster -b --all -n words.txt http://target                                            Start buster but also open the results in nice text user interface
 ```
 
+## Blessed
+
+Buster comes with an optional text interface which helps when investigating the results in detail. Use either `-b` or `--blessed` options to activate it.
+
+![](https://media.githubusercontent.com/media/pownjs/pown-buster/master/screenshots/01.png)
+
 ## Todo
 
 The following list of improvements are just around the corner:
