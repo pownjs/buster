@@ -59,13 +59,19 @@ Examples:
   pown buster -b --all -n words.txt http://target                                            Start buster but also open the results in nice text user interface
 ```
 
+## Performance
+
+Pown Buster is written such as that none of the requests and internal scheduling mechanisms are blocking. Although I was initially skeptical that this is going to lead to significant performance improvements, it turns out that it does. I compared the performance to other tools written in more concurrent languages such as go. It appears that Pown Buster is at least 6 times faster in default configuration when compared to these tools.
+
+That being said, speed is not always a good thing. In my own tests, many servers will start throwing 5xx errors if you are sending too fast. You can control the concurrency of the tool using `--request-concurrency` and `--load-concurrency` options. The former caps how many concurrent request you would like to send to the server as the name suggests. The later is slightly trickier. This option indicates how many concurrent operations can be pre-loaded in advance. The higher the number the more Promises will be instantiated in advance increasing the performance but at the same time increasing the memory profile. The lower the number the less memory will be used but more operations have to be fetch at some intermediary point. If you are dealing with huge-dictionaries this option helps control the tool behaviour without making your hardware sweat. In normal circumstances you may want to leave this option alone and use `--request-concurrency` intead.
+
 ## Blessed
 
 Pown Buster comes with an optional text interface which comes handy when investigating all results in detail. Use either `-b` or `--blessed` options to activate it. Using this feature will not result in performance degradation.
 
 ![Screenshot](https://media.githubusercontent.com/media/pownjs/pown-buster/master/screenshots/01.png)
 
-## Todo
+## Suggestions and Improvements
 
 The following list of improvements are just around the corner:
 
