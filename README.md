@@ -45,6 +45,7 @@ Options:
   --extension-suffix          Extension suffix  [string] [default: ""]
   --request-concurrency, -r   The number of request to run concurrently  [string] [default: Infinity]
   --load-concurrency, -l      The number of assync operations to run concurrently  [string] [default: Infinity]
+  --timeout, -t               Request timeout in milliseconds  [number] [default: 30000]
   --yes, -y                   Answer yes to all questions  [boolean] [default: false]
 ```
 
