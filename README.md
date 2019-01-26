@@ -30,7 +30,7 @@ $ ./node_modules/.bin/pown-cli buster
 > **WARNING**: This pown command is currently under development and as a result will be subject to breaking changes.
 
 ```
-pown-cli buster [options] <url>
+pown buster [options] <url>
 
 Web file and directory bruteforcer (a.k.a dirbuster)
 
@@ -51,10 +51,12 @@ Options:
   --timeout, -t               Request timeout in milliseconds  [number] [default: 30000]
   --all, -y                   Display all results  [boolean] [default: false]
   --yes, -y                   Answer yes to all questions  [boolean] [default: false]
+  --blessed, -b               Start with blessed ui  [boolean] [default: false]
 
 Examples:
-  pown-cli buster -X HEAD -n words.txt http://target                                             Send requests using the HEAD HTTP method
-  pown-cli buster -H 'Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l' -n words.txt http://target  Send basic authentication headers
+  pown buster -X HEAD -n words.txt http://target                                             Send requests using the HEAD HTTP method
+  pown buster -H 'Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l' -n words.txt http://target  Send basic authentication headers
+  pown buster -b --all -n words http://target                                                Start buster but also open the results in nice text user interface
 ```
 
 ## Todo
