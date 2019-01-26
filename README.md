@@ -27,6 +27,8 @@ $ ./node_modules/.bin/pown-cli buster
 
 ## Usage
 
+> **WARNING**: This pown command is currently under development and as a result will be subject to breaking changes.
+
 ```
 pown-cli buster [options] <url>
 
