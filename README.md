@@ -1,5 +1,5 @@
 [![Follow on Twitter](https://img.shields.io/twitter/follow/pownjs.svg?logo=twitter)](https://twitter.com/pownjs)
-![NPM](https://img.shields.io/npm/v/@pown/buster.svg)
+[![NPM](https://img.shields.io/npm/v/@pown/buster.svg)](https://www.npmjs.com/package/@pown/buster)
 
 # Pown Buster 
 
