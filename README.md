@@ -56,7 +56,7 @@ Options:
 Examples:
   pown buster -X HEAD -n words.txt http://target                                             Send requests using the HEAD HTTP method
   pown buster -H 'Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l' -n words.txt http://target  Send basic authentication headers
-  pown buster -b --all -n words http://target                                                Start buster but also open the results in nice text user interface
+  pown buster -b --all -n words.txt http://target                                            Start buster but also open the results in nice text user interface
 ```
 
 ## Todo
