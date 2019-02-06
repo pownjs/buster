@@ -6,24 +6,50 @@
 
 Pown Buster is a web file and folder discovery tool.
 
+## Credits
+
+This tool is part of [secapps.com](https://secapps.com) open-source initiative.
+
+```
+  ___ ___ ___   _   ___ ___  ___
+ / __| __/ __| /_\ | _ \ _ \/ __|
+ \__ \ _| (__ / _ \|  _/  _/\__ \
+ |___/___\___/_/ \_\_| |_|  |___/
+  https://secapps.com
+```
+
 ## Quickstart
 
-If installed globally as part of [Pown.js](https://github.com/pownjs/pown) invoke like this:
+This tool is meant to be used as part of [Pown.js](https://github.com/pownjs/pown) but it can be invoked separately as an independent tool.
+
+Install Pown first as usual:
+
+```sh
+$ npm install -g pown@latest
+```
+
+Invoke directly from Pown:
 
 ```sh
 $ pown buster
 ```
 
-Otherwise, install this module from the root of your project:
+Otherwise, install this module locally from the root of your project:
 
 ```sh
 $ npm install @pown/buster --save
 ```
 
-Once done, invoke pown buster like this:
+Once done, invoke pown cli:
 
 ```sh
 $ ./node_modules/.bin/pown-cli buster
+```
+
+You can also use the global pown to invoke the tool locally:
+
+```sh
+$ POWN_ROOT=. pown buster
 ```
 
 ## Usage
