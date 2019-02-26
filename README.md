@@ -4,7 +4,7 @@
 
 # Pown Buster 
 
-Pown Buster is a web file and folder discovery tool.
+Pown Buster is a multi-service bruteforce discovery tool.
 
 ## Credits
 
@@ -57,14 +57,30 @@ $ POWN_ROOT=. pown buster
 > **WARNING**: This pown command is currently under development and as a result will be subject to breaking changes.
 
 ```
-pown buster [options] <url>
+pown buster <command>
+
+Multi-service bruteforce discovery tool
+
+Commands:
+  pown bust web [options] <url>       Web file and directory bruteforcer (a.k.a dirbuster)
+  pown bust email [options] <domain>  Email bruteforce discovery tool (via smtp)  [aliases: emails]
+
+Options:
+  --version  Show version number  [boolean]
+  --help     Show help  [boolean]
+```
+
+### `pown bust web`
+
+```
+pown bust web [options] <url>
 
 Web file and directory bruteforcer (a.k.a dirbuster)
 
 Options:
   --version                   Show version number  [boolean]
-  --debug                     Debug mode  [boolean]
   --help                      Show help  [boolean]
+  --write, -w                 Write to file  [string]
   --request-method, -X        Request method  [string] [default: "GET"]
   --name-dictionary, -n       Name dictionary file  [string]
   --extension-dictionary, -e  Extension dictionary file  [string]
@@ -76,7 +92,7 @@ Options:
   --load-concurrency, -l      The number of assync operations to run concurrently  [string] [default: Infinity]
   --header, -H                Set header  [array] [default: []]
   --timeout, -t               Request timeout in milliseconds  [number] [default: 30000]
-  --all, -y                   Display all results  [boolean] [default: false]
+  --all, -a                   Display all results  [boolean] [default: false]
   --yes, -y                   Answer yes to all questions  [boolean] [default: false]
   --blessed, -b               Start with blessed ui  [boolean] [default: false]
 
@@ -84,6 +100,24 @@ Examples:
   pown buster -X HEAD -n words.txt http://target                                             Send requests using the HEAD HTTP method
   pown buster -H 'Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l' -n words.txt http://target  Send basic authentication headers
   pown buster -b --all -n words.txt http://target                                            Start buster but also open the results in nice text user interface
+```
+
+### `pown bust emails`
+
+```
+pown bust email [options] <domain>
+
+Email bruteforce discovery tool (via smtp)
+
+Options:
+  --version         Show version number  [boolean]
+  --help            Show help  [boolean]
+  --write, -w       Write to file  [string]
+  --dictionary, -d  Dictionary file  [string]
+  --servers, -s     Servers to use  [array] [default: []]
+  --scale, -e       Scale servers times  [number] [default: 10]
+  --all, -a         Display all results  [boolean] [default: false]
+  --yes, -y         Answer yes to all questions  [boolean] [default: false]
 ```
 
 ## Performance
