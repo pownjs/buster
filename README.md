@@ -34,7 +34,9 @@ Invoke directly from Pown:
 $ pown buster
 ```
 
-Otherwise, install this module locally from the root of your project:
+### Library Use
+
+install this module locally from the root of your project:
 
 ```sh
 $ npm install @pown/buster --save
