@@ -23,11 +23,11 @@
   },
   "homepage": "https://github.com/pownjs/pown-buster#readme",
   "devDependencies": {
-    "@pown/cli": "^2.12.3",
+    "@pown/cli": "^2.14.1",
     "@pown/dist": "^2.4.0"
   },
   "dependencies": {
-    "@pown/async": "^2.3.0",
+    "@pown/async": "^2.5.0",
     "@pown/file": "^2.0.0",
     "@pown/request": "^2.6.0"
   },
