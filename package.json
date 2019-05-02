@@ -29,7 +29,7 @@
   "dependencies": {
     "@pown/async": "^2.5.0",
     "@pown/file": "^2.0.0",
-    "@pown/request": "^2.6.0"
+    "@pown/request": "^2.6.1"
   },
   "pown": {
     "commands": [
